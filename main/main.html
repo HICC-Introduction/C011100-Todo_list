@@ -4,6 +4,30 @@
     <meta charset="utf-8">
     <title></title>
 
+    <script>
+
+        function test() {
+
+        var aaa = document.getElementById('test1').value;
+
+        document.getElementById('test2').value = aaa;
+
+        }
+
+        document.getElementById("test1").onclick=function(E)
+        {
+          var addtext = E.target.value;
+
+          document.getElementById("content").textcontent=addtext;
+        }
+
+
+
+
+   </script>
+
+
+
     <style>
       h2{
         color:rgb(41,128,185);
@@ -55,14 +79,6 @@
        color:lightgray;
      }
 
-     input[type="submit"]{
-       position: absolute;
-       top:86.25px;
-       left:1290px;
-       border-color:lightgray;
-       height: 30px;
-     }
-
 
 
       </style>
@@ -74,12 +90,21 @@
       <div class="rounded2"></div>
       <div class="rounded3"></div>
 
-    <form action="main.html" method="get">
-      <textarea cols="50" rows="1" id="textinput" placeholder="내용을 입력해주세요" autofocus></textarea>;
-      <input type="submit" value="+" class="buttonclass" value="+">;
-      console.log("textinput");
 
-   </form>
+      <textarea cols="50" rows="1" id="test1" placeholder="내용을 입력해주세요" autofocus></textarea>
+
+      <textarea cols="50" rows="1" id="test2" placeholder="내용을 입력해주세요" autofocus></textarea>
+
+     <p id="content"></p>
+
+     <script src="content.js"></script>
+
+
+
+
+      </script>
+
+
 
 
 
