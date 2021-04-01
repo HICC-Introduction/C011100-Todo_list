@@ -42,7 +42,7 @@
       }
 
 
-      textarea {
+      input[type="text"] {
         position: absolute;
         top: 86.25px;
         left: 904.32px;
@@ -51,11 +51,11 @@
         border-color:lightgray;
      }
 
-     textarea::placeholder{
+     input::placeholder{
        color:lightgray;
      }
 
-     input[type="submit"]{
+     button[type="button"]{
        position: absolute;
        top:86.25px;
        left:1290px;
@@ -74,11 +74,12 @@
       <div class="rounded2"></div>
       <div class="rounded3"></div>
 
-    <form action="main.html" method="get">
-      <textarea cols="50" rows="1" id="textinput" placeholder="내용을 입력해주세요" autofocus></textarea>;
-      <input type="submit" value="+" class="buttonclass" value="+">;
-      console.log("textinput");
+    <form action="listwriting">
+      <div class="text_form">
+          <input type="text" maxlength="50" placeholder="내용을 입력해주세요" autofocus>
+          <button type="button" value="+">+</button>
 
+     </div>
    </form>
 
 
