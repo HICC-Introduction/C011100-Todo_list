@@ -1,0 +1,49 @@
+h2{
+  color:rgb(41,128,185);
+  font-size: 36px;
+  font-style:'Han Sans';
+  text-align:center;
+}
+.rounded1{
+  position: absolute;
+  top: 186.8px;
+  left: 58.835px;
+  width: 456.87px;
+  height: 531.25px;
+  background-color:rgb(224,224,224);
+  border-radius:25%;
+}
+
+.rounded2{
+  position: absolute;
+  top: 186.8px;
+  left: 540.08px;
+  width: 456.87px;
+  height: 531.25px;
+  background-color:rgb(224,224,224);
+  border-radius:25%;
+}
+
+.rounded3{
+  position: absolute;
+  top: 186.8px;
+  left: 1021.325px;
+  width: 456.87px;
+  height: 531.25px;
+  background-color:rgb(224,224,224);
+  border-radius:25%;
+}
+
+
+textarea {
+  position: absolute;
+  top: 86.25px;
+  left: 904.32px;
+  width: 352px;
+  height: 30px;
+  border-color:lightgray;
+}
+
+textarea::placeholder{
+ color:lightgray;
+}

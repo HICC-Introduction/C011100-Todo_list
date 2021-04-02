@@ -2,25 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./design.css">
     <title></title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <script>
 
-        function test() {
 
-        var aaa = document.getElementById('test1').value;
+		  $(document).ready(function(){
+			$(".button_sum").click(function(){
+				val=$(".test1").text("finish");
 
-        document.getElementById('test2').value = aaa;
+		  	});
+        $(".summary").html(sum);
 
-        }
-
-        document.getElementById("test1").onclick=function(E)
-        {
-          var addtext = E.target.value;
-
-          document.getElementById("content").textcontent=addtext;
-        }
-
+	  	});
 
 
 
@@ -29,62 +26,12 @@
 
 
     <style>
-      h2{
-        color:rgb(41,128,185);
-        font-size: 36px;
-        font-style:'Han Sans';
-        text-align:center;
-      }
-      .rounded1{
-        position: absolute;
-        top: 186.8px;
-        left: 58.835px;
-        width: 456.87px;
-        height: 531.25px;
-        background-color:rgb(224,224,224);
-        border-radius:25%;
-      }
-
-      .rounded2{
-        position: absolute;
-        top: 186.8px;
-        left: 540.08px;
-        width: 456.87px;
-        height: 531.25px;
-        background-color:rgb(224,224,224);
-        border-radius:25%;
-      }
-
-      .rounded3{
-        position: absolute;
-        top: 186.8px;
-        left: 1021.325px;
-        width: 456.87px;
-        height: 531.25px;
-        background-color:rgb(224,224,224);
-        border-radius:25%;
-      }
-
-
-      textarea {
-        position: absolute;
-        top: 86.25px;
-        left: 904.32px;
-        width: 352px;
-        height: 30px;
-        border-color:lightgray;
-     }
-
-     textarea::placeholder{
-       color:lightgray;
-     }
-
-
-
-      </style>
+    </style>
 
     </head>
+
     <body>
+
       <h2>Todo list</h2>
       <div class="rounded1"></div>
       <div class="rounded2"></div>
@@ -93,16 +40,15 @@
 
       <textarea cols="50" rows="1" id="test1" placeholder="내용을 입력해주세요" autofocus></textarea>
 
-      <textarea cols="50" rows="1" id="test2" placeholder="내용을 입력해주세요" autofocus></textarea>
+      <input type="button" value="버튼" class="button_sum">
 
-     <p id="content"></p>
-
-     <script src="content.js"></script>
+      <span class="summary"></span>
 
 
 
 
-      </script>
+
+
 
 
 
