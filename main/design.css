@@ -35,7 +35,7 @@ h2{
 }
 
 
-textarea {
+#txttext {
   position: absolute;
   top: 86.25px;
   left: 904.32px;
@@ -44,6 +44,6 @@ textarea {
   border-color:lightgray;
 }
 
-textarea::placeholder{
+txttext::placeholder{
  color:lightgray;
 }

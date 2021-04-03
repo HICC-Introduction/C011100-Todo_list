@@ -6,52 +6,79 @@
     <title></title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <script>
 
-        var arrName=new Array();
-        var cnt=-1;
 
-        function input1()  {
-          cnt++;
-          arrName[cnt]=frm1.name.value;
-          frm1.name.value="";
-          frm1.name.focus();
-        }
+    var arr = new Array();
 
-        function output1(){
-
-          <div class="rounded1"></div>
-          <div class="rounded2"></div>
-          <div class="rounded3"></div>
-
-          document.write("시작");
-
-
-          for(var i=0;i<=cnt;i++){
-            document.write(arrName[i]);
-
-          }
-
-
-        }
+   function showdata()
+   {
+     for(var i=0;i<10;i++)
+     {
+       arr[i]=$("#txttext").val();
+       val exex=arr[i];
+       $("#list").html(exex);
+       frm1.name.value="";
+     }
 
 
 
-    </script>
+   }
 
-  </head>
-  <body>
+  </script>
 
-    <h2>Todo list</h2>
-        <div class="rounded1"></div>
-        <div class="rounded2"></div>
-        <div class="rounded3"></div>
 
-    <form name="frm1">
-      리스트:<input type="text" name="name" id="text1"/><br>
-      <input type="button" value="+" onclick="input1();"/>
-      <input type="button" value="++" onclick="output1();"/>
-    </form>
 
-  </body>
+   <style>
+
+   .button1{
+
+     position: absolute;
+     top: 86.25px;
+     left: 1290.32px;
+     width: 30px;
+     height: 30px;
+     border-color:lightgray;
+
+   }
+
+   #list{
+     font-size: 18px;
+     font-style:'Han Sans';
+     position: absolute;
+     top: 240.8px;
+     left: 110.835px;
+   }
+
+
+
+   </style>
+
+   </head>
+
+   <body>
+
+     <h2>Todo list</h2>
+     <div class="rounded1"></div>
+     <div class="rounded2"></div>
+     <div class="rounded3"></div>
+
+
+
+     <form name="frm1">
+     <input type="text" placeholder="내용을 입력해주세요" id="txttext" name="name" />
+
+
+     <label id="list"></label><br />
+     <input type="button" value="+" class="button1" onclick="showdata()"/>
+
+     </form>
+
+
+   </body>
+
+
+
+
   </html>
