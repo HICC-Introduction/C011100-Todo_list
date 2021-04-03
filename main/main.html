@@ -9,21 +9,11 @@
 
     <script>
 
-
-    var arr = new Array();
-
    function showdata()
    {
-     for(var i=0;i<10;i++)
-     {
-       arr[i]=$("#txttext").val();
-       val exex=arr[i];
-       $("#list").html(exex);
-       frm1.name.value="";
-     }
+     var fname=$("#txttext").val();
 
-
-
+     $("#list").html(fname);
    }
 
   </script>
@@ -47,8 +37,8 @@
      font-size: 18px;
      font-style:'Han Sans';
      position: absolute;
-     top: 240.8px;
-     left: 110.835px;
+     top: 216.8px;
+     left:168.835px;
    }
 
 
@@ -66,14 +56,12 @@
 
 
 
-     <form name="frm1">
-     <input type="text" placeholder="내용을 입력해주세요" id="txttext" name="name" />
+
+     <input type="text" placeholder="내용을 입력해주세요" id="txttext" />
 
 
      <label id="list"></label><br />
      <input type="button" value="+" class="button1" onclick="showdata()"/>
-
-     </form>
 
 
    </body>
